@@ -1,6 +1,3 @@
-# Elevenlabs-Power-Automate-Custom-Connector
-This repository contains the Swagger definition for a Power Automate custom connector that interfaces with the ElevenLabs API.
-
 # Power Automate Custom Connector for ElevenLabs API
 
 This repository contains the Swagger definition for a Power Automate custom connector that interfaces with the ElevenLabs API.
@@ -8,6 +5,8 @@ This repository contains the Swagger definition for a Power Automate custom conn
 ## Overview
 
 This custom connector allows you to integrate ElevenLabs' powerful Text-to-Speech API into your Power Automate workflows. With this connector, you can convert text into speech using a voice of your choice and return audio.
+
+For more details about the ElevenLabs API, please refer to the [official documentation](https://docs.elevenlabs.io/api-reference/text-to-speech).
 
 ## Features
 
@@ -26,10 +25,9 @@ To use this custom connector, follow these steps:
 4. Fill in the necessary information and click 'Create connector'.
 5. Test the connector in Power Automate to ensure it's working correctly.
 
+For more information on how to use the ElevenLabs API, please refer to the [official API reference](https://docs.elevenlabs.io/api-reference/text-to-speech).
+
 ## Contributing
 
 Contributions are welcome! Please read the contributing guidelines before making any changes.
 
-## License
-
-This project is licensed under the terms of the MIT license.
