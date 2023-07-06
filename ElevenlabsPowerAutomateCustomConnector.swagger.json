@@ -1,0 +1,97 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "TTS11LAB",
+    "description": "Text to Speech 11 lab",
+    "version": "1.0"
+  },
+  "host": "api.elevenlabs.io",
+  "basePath": "/",
+  "schemes": [
+    "https"
+  ],
+  "consumes": [],
+  "produces": [],
+  "paths": {
+    "/v1/text-to-speech/21m00Tcm4TlvDq8ikWAM": {
+      "post": {
+        "responses": {
+          "default": {
+            "description": "default",
+            "schema": {}
+          }
+        },
+        "operationId": "1",
+        "summary": "GetSpeech",
+        "parameters": [
+          {
+            "name": "accept",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "default": "audio/mpeg",
+            "description": "accept",
+            "x-ms-summary": "accept"
+          },
+          {
+            "name": "xi-api-key",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "description": "xi-api-key",
+            "x-ms-summary": "xi-api-key"
+          },
+          {
+            "name": "Content-Type",
+            "in": "header",
+            "required": true,
+            "type": "string",
+            "default": "application/json",
+            "description": "Content-Type",
+            "x-ms-summary": "Content-Type"
+          },
+          {
+            "name": "body",
+            "in": "body",
+            "required": false,
+            "schema": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string",
+                  "description": "text",
+                  "title": "text"
+                },
+                "voice_settings": {
+                  "type": "object",
+                  "properties": {
+                    "stability": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "stability"
+                    },
+                    "similarity_boost": {
+                      "type": "integer",
+                      "format": "int32",
+                      "description": "similarity_boost"
+                    }
+                  },
+                  "description": "voice_settings"
+                }
+              },
+              "required": [
+                "text"
+              ]
+            }
+          }
+        ]
+      }
+    }
+  },
+  "definitions": {},
+  "parameters": {},
+  "responses": {},
+  "securityDefinitions": {},
+  "security": [],
+  "tags": []
+}
